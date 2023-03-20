@@ -19,7 +19,7 @@ public class LoginTests extends TestBase{
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("ssa@gmail.com", "Ssa12345$");
         app.getHelperUser().submitYalla();
-        app.getHelperUser().submitOk();
+        app.getHelperUser().approveOk();
 
         Assert.assertTrue(app.getHelperUser().isLogged());
     }
@@ -29,7 +29,7 @@ public class LoginTests extends TestBase{
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("ssa@gmail.com", "Ssa12345$");
         app.getHelperUser().submitYalla();
-        app.getHelperUser().submitOk();
+        app.getHelperUser().approveOk();
 
         Assert.assertTrue(app.getHelperUser().isLogged());
     }

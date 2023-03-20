@@ -21,7 +21,7 @@ public class HelperUser extends HelperBase{
         click(By.xpath("//button[@type='submit']"));
     }
 
-    public void submitOk() {
+    public void approveOk() {
         click(By.xpath("//button[text()='Ok']"));
     }
 
