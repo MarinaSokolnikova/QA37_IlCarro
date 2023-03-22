@@ -40,4 +40,12 @@ public class HelperBase {
     public boolean isElementPresent(By locator){
         return wd.findElements(locator).size()>0;
     }
+
+    public void refresh(){
+        wd.navigate().refresh();
+    }
+
+
 }
+
+
