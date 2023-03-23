@@ -1,5 +1,6 @@
 package tests;
 
+import models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -18,10 +19,22 @@ public class LoginTests extends TestBase{
     }
 
     @Test
+    public void loginSuccess1(){
+
+        User user = new User().setEmail("ssa@gmail.com").setPassword("Ssa12345$");
+
+        app.getHelperUser().openLoginForm();
+        app.getHelperUser().fillLoginForm(user);
+        app.getHelperUser().submit();
+
+        Assert.assertEquals(app.getHelperUser().getMessage(), "Logged in success");
+    }
+
+    @Test
     public void loginSuccess(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("ssa@gmail.com", "Ssa12345$");
-        app.getHelperUser().submitLogin();
+        app.getHelperUser().submit();
 
         Assert.assertEquals(app.getHelperUser().getMessage(), "Logged in success");
     }
@@ -30,7 +43,7 @@ public class LoginTests extends TestBase{
     public void loginSuccessModel(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("ssa@gmail.com", "Ssa12345$");
-        app.getHelperUser().submitLogin();
+        app.getHelperUser().submit();
 
         Assert.assertEquals(app.getHelperUser().getMessage(), "Logged in success");
     }
@@ -39,8 +52,9 @@ public class LoginTests extends TestBase{
     public void loginWrongEmail(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("ssagmail.com", "Ssa12345$");
-        app.getHelperUser().submitLogin();
+        app.getHelperUser().submit();
 
+        Assert.assertEquals(app.getHelperUser().getErrorText(), "It'snot look like email");
         Assert.assertTrue(app.getHelperUser().notClickable());
 
     }
@@ -49,16 +63,16 @@ public class LoginTests extends TestBase{
     public void loginWrongEmailEmpty(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("", "Ssa12345$");
-        app.getHelperUser().submitLogin();
+        app.getHelperUser().submit();
 
-        Assert.assertEquals(app.getHelperUser().errorMessageForm(), "Email is required");// in code " Email is required "???
+        Assert.assertEquals(app.getHelperUser().getErrorText(), "Email is required");// in code " Email is required "???
     }
 
     @Test
     public void loginWrongPassword(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("ssa@gmail.com", "Ssa");
-        app.getHelperUser().submitLogin();
+        app.getHelperUser().submit();
 
         Assert.assertEquals(app.getHelperUser().getMessage(), "\"Login or Password incorrect\"");
     }
@@ -67,7 +81,7 @@ public class LoginTests extends TestBase{
     public void loginWrongPasswordEmpty(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("ssa@gmail.com", "");
-        app.getHelperUser().submitLogin();
+        app.getHelperUser().submit();
 
         Assert.assertTrue(app.getHelperUser().notClickable());
     }
@@ -76,7 +90,7 @@ public class LoginTests extends TestBase{
     public void loginUnregisteredUser(){
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("abc@gmail.com", "Abc12345$");
-        app.getHelperUser().submitLogin();
+        app.getHelperUser().submit();
 
         Assert.assertEquals(app.getHelperUser().getMessage(), "\"Login or Password incorrect\"");
     }
