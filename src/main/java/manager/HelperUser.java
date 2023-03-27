@@ -2,6 +2,7 @@ package manager;
 
 import models.User;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -91,5 +92,16 @@ public class HelperUser extends HelperBase{
         //document.querySelector('#terms-of-use').click();
         JavascriptExecutor js = (JavascriptExecutor) wd;
         js.executeScript("document.querySelector('#terms-of-use').click();");
+    }
+
+
+    public void checkPolicyXY(){
+        Actions actions = new Actions(wd);
+        WebElement label = wd.findElement(By.cssSelector("label[for='terms-of-use']"));
+        Rectangle rect = label.getRect();
+        int w = rect.getWidth();
+
+        int xOffSet = -w/2;
+        actions.moveToElement(label, xOffSet, 0).click().release().perform();
     }
 }
