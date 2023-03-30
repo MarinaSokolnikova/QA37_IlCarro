@@ -41,8 +41,8 @@ public class HelperBase {
         return wd.findElements(locator).size()>0;
     }
 
-    public void refresh(){
-        wd.navigate().refresh();
+    public void back(){
+        wd.navigate().back();
     }
 
 
