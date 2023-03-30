@@ -28,9 +28,7 @@ public class HelperUser extends HelperBase{
         type(By.id("password"), user.getPassword());
     }
 
-    public void submit() {
-        click(By.xpath("//button[@type='submit']"));
-    }
+
 
     public void closeWindow() {
         click(By.xpath("//button[text()='Ok']"));
@@ -40,13 +38,7 @@ public class HelperUser extends HelperBase{
         click(By.xpath("//a[text()=' Logout ']"));
     }
 
-    public String getMessage() {
-        //wait
-        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".dialog-container"))));
-        //pause(2000);
-        return wd.findElement(By.cssSelector(".dialog-container>h2")).getText();
-    }
+
 
     public boolean isLogged() {
         return isElementPresent(By.xpath("//a[text()=' Logout ']"));
@@ -96,6 +88,7 @@ public class HelperUser extends HelperBase{
 
 
     public void checkPolicyXY(){
+        if (wd.findElement(By.id("terms-of-use")).isSelected()!= true){
         Actions actions = new Actions(wd);
         WebElement label = wd.findElement(By.cssSelector("label[for='terms-of-use']"));
         Rectangle rect = label.getRect();
@@ -103,5 +96,17 @@ public class HelperUser extends HelperBase{
 
         int xOffSet = -w/2;
         actions.moveToElement(label, xOffSet, 0).click().release().perform();
+    }
+    }
+
+    public void refresh() {
+        wd.navigate().refresh();
+    }
+
+    public void login(User user) {
+        openLoginForm();
+        fillLoginForm(user);
+        submit();
+        closeWindow();
     }
 }
