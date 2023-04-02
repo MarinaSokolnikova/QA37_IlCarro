@@ -37,6 +37,7 @@ public class AddNewCarTests extends TestBase {
 
         app.getHelperCar().openCarForm();
         app.getHelperCar().fillCarForm(car);
+        app.getHelperCar().attachPhoto("C:\\Users\\honor\\QA37\\QA37_IlCarro\\photo.jpg");
         app.getHelperCar().submit();
 
         Assert.assertTrue(app.getHelperCar().getMessage().contains("added successful"));
@@ -56,7 +57,6 @@ public class AddNewCarTests extends TestBase {
                 .carClass("C")
                 .carRegNumber("198-72613-" + i)
                 .price(50)
-                .about("Very nice car")
                 .build();
 
 
