@@ -1,0 +1,34 @@
+19:08:05.480  INFO  manager.ApplicationManager - All tests run in Chrome Browser
+19:08:07.393  INFO  manager.ApplicationManager - The link --->https://ilcarro.web.app/search
+19:08:07.464  INFO  tests.TestBase - Nme of method ---> loginSuccess
+19:08:13.122  INFO  tests.TestBase - Start test name 'loginSuccess'
+19:08:13.122  INFO  tests.TestBase - Test data ---> email: 'ssa@gmail.com' & password: 'Ssa12345$'
+19:08:15.097  INFO  tests.TestBase - Assert check is Element present with text 'Logged in success'
+19:08:15.233  INFO  tests.TestBase - The popup is closed
+19:08:15.239  INFO  tests.TestBase - Nme of method ---> loginSuccess1
+19:08:15.440  INFO  tests.TestBase - Before method finish logout
+19:08:15.444  INFO  tests.TestBase - Test data from object ---> email: 'ssa@gmail.com' & password: 'Ssa12345$'
+19:08:16.475  INFO  tests.TestBase - Assert check is Element present with text 'Logged in success'
+19:08:16.560  INFO  tests.TestBase - The popup is closed
+19:08:16.563  INFO  tests.TestBase - Nme of method ---> loginSuccessModel
+19:08:16.715  INFO  tests.TestBase - Before method finish logout
+19:08:17.729  INFO  tests.TestBase - The popup is closed
+19:08:17.731  INFO  tests.TestBase - Nme of method ---> loginUnregisteredUser
+19:08:17.859  INFO  tests.TestBase - Before method finish logout
+19:08:17.861  INFO  tests.TestBase - Test data ---> email: 'abc@gmail.com' & password: 'Abc12345$'
+19:08:19.030  INFO  tests.TestBase - Assert check is Error present with text '"Login or Password incorrect"'
+19:08:19.115  INFO  tests.TestBase - The popup is closed
+19:08:19.117  INFO  tests.TestBase - Nme of method ---> loginWrongEmail
+19:08:24.785  INFO  tests.TestBase - Test data ---> email: 'ssagmail.com' & password: 'Ssa12345$'
+19:08:25.423  INFO  tests.TestBase - Assert check is Error present with text 'It'snot look like email'
+19:08:25.478  INFO  tests.TestBase - Assert check is Element button not clickable
+19:08:30.531  INFO  tests.TestBase - Nme of method ---> loginWrongEmailEmpty
+19:08:35.881  INFO  tests.TestBase - Test data ---> email: '' & password: 'Ssa12345$'
+19:08:36.498  INFO  tests.TestBase - Assert check is Error present with text 'Email is required'
+19:08:41.535  INFO  tests.TestBase - Nme of method ---> loginWrongPassword
+19:08:46.892  INFO  tests.TestBase - Test data ---> email: 'ssa@gmail.com' & password: 'Ssa'
+19:08:47.959  INFO  tests.TestBase - Assert check is Error present with text '"Login or Password incorrect"'
+19:08:48.048  INFO  tests.TestBase - The popup is closed
+19:08:48.050  INFO  tests.TestBase - Nme of method ---> loginWrongPasswordEmpty
+19:08:53.421  INFO  tests.TestBase - Test data ---> email: 'ssa@gmail.com' & password: ''
+19:08:54.044  INFO  tests.TestBase - Assert check is Element button not clickable

@@ -1,0 +1,11 @@
+20:37:16.533  INFO  manager.ApplicationManager - All tests run in Chrome Browser
+20:37:18.234  INFO  manager.ApplicationManager - The link --->https://ilcarro.web.app/search
+20:37:25.132  INFO  tests.TestBase - Before class logged in account with data ---> email: 'ssa@gmail.com', password: 'Ssa12345$'
+20:37:25.163  INFO  tests.TestBase - Name of method ---> addNewCarSuccess
+20:37:25.183  INFO  tests.TestBase - Test data ---> location: 'Tel Aviv, Israel', manufacture: 'Nissan', model: 'A2', year: '2004', fuel: 'Petrol', seats: '5', carClass: 'C', carRegNumber: 198-72613-1219, price: '50'
+20:37:29.899  INFO  tests.TestBase - Assert check is Element with text 'added successful' present
+20:37:30.060  INFO  tests.TestBase - Assert check is home page displayed
+20:37:30.065  INFO  tests.TestBase - Name of method ---> addNewCarSuccessAll
+20:37:30.067  INFO  tests.TestBase - Test data ---> location: 'Tel Aviv, Israel', manufacture: 'Mazda', model: 'M3', year: '2022', fuel: 'Petrol', seats: '5', carClass: 'C', carRegNumber: 198-72613-1625, price: '50', about: 'Very nice car'
+20:37:33.647  INFO  tests.TestBase - Assert check is Element with text 'added successful' present
+20:37:33.774  INFO  tests.TestBase - Assert check is home page displayed
