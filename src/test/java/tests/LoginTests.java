@@ -45,11 +45,13 @@ public class LoginTests extends TestBase{
 
     @Test
     public void loginSuccessModel(){
+        logger.info("Test data ---> email: 'ssa@gmail.com' & password: 'Ssa12345$'");
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm("ssa@gmail.com", "Ssa12345$");
         app.getHelperUser().submit();
 
         Assert.assertEquals(app.getHelperUser().getMessage(), "Logged in success");
+        logger.info("Assert check is Element present with text 'Logged in success'");
     }
 
     @Test
@@ -62,7 +64,7 @@ public class LoginTests extends TestBase{
         Assert.assertEquals(app.getHelperUser().getErrorText(), "It'snot look like email");
         logger.info("Assert check is Error present with text 'It'snot look like email'");
         Assert.assertTrue(app.getHelperUser().notClickable());
-        logger.info("Assert check is Element button not clickable");
+        logger.info("Assert check is Element button 'Yalla' not clickable");
 
     }
 
@@ -96,7 +98,7 @@ public class LoginTests extends TestBase{
         app.getHelperUser().submit();
 
         Assert.assertTrue(app.getHelperUser().notClickable());
-        logger.info("Assert check is Element button not clickable");
+        logger.info("Assert check is Element button 'Yalla' not clickable");
     }
 
     @Test
@@ -115,7 +117,7 @@ public class LoginTests extends TestBase{
     public void postCondition(){
         if (app.getHelperUser().isPopup()) {
             app.getHelperUser().closeWindow();
-        logger.info("The popup is closed");
+        logger.info("The window is closed");
         }
     }
 

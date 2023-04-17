@@ -52,4 +52,16 @@ public class HelperCar extends HelperBase{
     public void attachPhoto(String path) {
         wd.findElement(By.cssSelector("#photos")).sendKeys(path);
     }
+
+    public void searchCurrentMonth(String city, String dateFrom, String dateTo) {
+        typeCity(city);
+        click(By.id("dates"));
+        click(By.xpath("//div[text()=' 25 ']"));
+        click(By.xpath("//div[text()=' 26 ']"));
+    }
+
+    private void typeCity(String city) {
+        type(By.id("city"), city);
+        click(By.cssSelector(".pac-item"));
+    }
 }

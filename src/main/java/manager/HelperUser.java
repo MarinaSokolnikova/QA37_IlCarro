@@ -101,6 +101,7 @@ public class HelperUser extends HelperBase{
 
     public void refresh() {
         wd.navigate().refresh();
+        logger.info("Refresh");
     }
 
     public void login(User user) {
