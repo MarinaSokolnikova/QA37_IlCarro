@@ -1,0 +1,24 @@
+12:44:09.158  INFO  manager.ApplicationManager - All tests run in Chrome Browser
+12:44:12.061  INFO  manager.ApplicationManager - The link --->https://ilcarro.web.app/search
+12:44:12.129  INFO  tests.TestBase - Name of method ---> searchCurrentMonthSuccess
+12:44:12.138  INFO  manager.ListenerWD - Before Find Element---> By.id: city
+12:44:12.212  INFO  manager.ListenerWD - After Find Element---> By.id: city
+12:44:12.248  INFO  manager.ListenerWD - Location of element ---> (153, 234)
+12:44:12.559  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .pac-item
+12:44:12.935  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .pac-item
+12:44:12.958  INFO  manager.ListenerWD - Location of element ---> (154, 279)
+12:44:13.039  INFO  manager.ListenerWD - Before Find Element---> By.id: dates
+12:44:13.091  INFO  manager.ListenerWD - After Find Element---> By.id: dates
+12:44:13.109  INFO  manager.ListenerWD - Location of element ---> (153, 327)
+12:44:13.329  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //div[text()=' 26 ']
+12:44:13.381  INFO  manager.ListenerWD - After Find Element---> By.xpath: //div[text()=' 26 ']
+12:44:13.409  INFO  manager.ListenerWD - Location of element ---> (283, 606)
+12:44:13.536  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //div[text()=' 26 ']
+12:44:13.577  INFO  manager.ListenerWD - After Find Element---> By.xpath: //div[text()=' 26 ']
+12:44:13.595  INFO  manager.ListenerWD - Location of element ---> (283, 612)
+12:44:13.696  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //button[@type='submit']
+12:44:13.744  INFO  manager.ListenerWD - After Find Element---> By.xpath: //button[@type='submit']
+12:44:13.767  INFO  manager.ListenerWD - Location of element ---> (153, 385)
+12:44:13.835  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .car-container
+12:44:18.914  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .car-container
+12:44:18.920  INFO  manager.ListenerWD - List of elements is ---> 0

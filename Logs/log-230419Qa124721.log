@@ -1,0 +1,24 @@
+12:47:25.717  INFO  manager.ApplicationManager - All tests run in Chrome Browser
+12:47:28.332  INFO  manager.ApplicationManager - The link --->https://ilcarro.web.app/search
+12:47:28.398  INFO  tests.TestBase - Name of method ---> searchCurrentMonthSuccess
+12:47:28.405  INFO  manager.ListenerWD - Before Find Element---> By.id: city
+12:47:28.474  INFO  manager.ListenerWD - After Find Element---> By.id: city
+12:47:28.504  INFO  manager.ListenerWD - Location of element ---> (153, 234)
+12:47:28.809  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .pac-item
+12:47:29.434  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .pac-item
+12:47:29.456  INFO  manager.ListenerWD - Location of element ---> (154, 279)
+12:47:29.531  INFO  manager.ListenerWD - Before Find Element---> By.id: dates
+12:47:29.581  INFO  manager.ListenerWD - After Find Element---> By.id: dates
+12:47:29.600  INFO  manager.ListenerWD - Location of element ---> (153, 327)
+12:47:29.810  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //div[text()=' 25 ']
+12:47:29.867  INFO  manager.ListenerWD - After Find Element---> By.xpath: //div[text()=' 25 ']
+12:47:29.895  INFO  manager.ListenerWD - Location of element ---> (243, 609)
+12:47:30.044  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //div[text()=' 26 ']
+12:47:30.088  INFO  manager.ListenerWD - After Find Element---> By.xpath: //div[text()=' 26 ']
+12:47:30.106  INFO  manager.ListenerWD - Location of element ---> (283, 612)
+12:47:30.208  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //button[@type='submit']
+12:47:30.251  INFO  manager.ListenerWD - After Find Element---> By.xpath: //button[@type='submit']
+12:47:30.270  INFO  manager.ListenerWD - Location of element ---> (153, 366)
+12:47:30.435  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .car-container
+12:47:37.231  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .car-container
+12:47:37.239  INFO  manager.ListenerWD - List of elements is ---> 422

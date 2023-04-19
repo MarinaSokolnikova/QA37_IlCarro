@@ -54,14 +54,20 @@ public class HelperCar extends HelperBase{
     }
 
     public void searchCurrentMonth(String city, String dateFrom, String dateTo) {
+        String[] newDateFrom = dateFrom.split("/");
+        String[] newDateTo = dateTo.split("/");
         typeCity(city);
         click(By.id("dates"));
-        click(By.xpath("//div[text()=' 25 ']"));
-        click(By.xpath("//div[text()=' 26 ']"));
+        click(By.xpath("//div[text()=' "+newDateFrom[1]+" ']"));
+        click(By.xpath("//div[text()=' "+newDateTo[1]+" ']"));
     }
 
     private void typeCity(String city) {
         type(By.id("city"), city);
         click(By.cssSelector(".pac-item"));
+    }
+
+    public boolean isListOfCarsAppeared() {
+        return isElementPresent(By.cssSelector(".car-container"));
     }
 }

@@ -1,0 +1,35 @@
+12:45:29.889  INFO  manager.ApplicationManager - All tests run in Chrome Browser
+12:45:32.902  INFO  manager.ApplicationManager - The link --->https://ilcarro.web.app/search
+12:45:32.975  INFO  tests.TestBase - Name of method ---> registrationRegisteredUser
+12:45:35.983  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //a[text()=' Logout ']
+12:45:41.068  INFO  manager.ListenerWD - After Find Element---> By.xpath: //a[text()=' Logout ']
+12:45:41.074  INFO  manager.ListenerWD - List of elements is ---> 0
+12:45:41.079  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //a[text()=' Sign up ']
+12:45:41.147  INFO  manager.ListenerWD - After Find Element---> By.xpath: //a[text()=' Sign up ']
+12:45:41.183  INFO  manager.ListenerWD - Location of element ---> (1166, 24)
+12:45:41.330  INFO  manager.ListenerWD - Before Find Element---> By.id: name
+12:45:41.397  INFO  manager.ListenerWD - After Find Element---> By.id: name
+12:45:41.425  INFO  manager.ListenerWD - Location of element ---> (1070, 258)
+12:45:41.668  INFO  manager.ListenerWD - Before Find Element---> By.id: lastNam
+12:45:46.766  INFO  manager.ListenerWD - Huston we have a problem
+12:45:46.768  INFO  manager.ListenerWD - Object target ---> ChromeDriver: chrome on WINDOWS (b575d40e3b79344150a2e20e32404c8c)
+12:45:46.769  INFO  manager.ListenerWD - ********************
+12:45:46.770  INFO  manager.ListenerWD - Method name--->findElement
+12:45:46.770  INFO  manager.ListenerWD - ********************
+12:45:46.770  INFO  manager.ListenerWD - ********************
+12:45:46.771  INFO  manager.ListenerWD - ********************
+12:45:46.771  INFO  manager.ListenerWD - ********************
+12:45:46.776  INFO  manager.ListenerWD - InvocationTargetException3org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#lastNam"}
+  (Session info: chrome=112.0.5615.137)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b575d40e3b79344150a2e20e32404c8c, findElement {using=id, value=lastNam}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\honor\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50870}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50870/devtoo..., se:cdpVersion: 112.0.5615.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b575d40e3b79344150a2e20e32404c8c
+12:45:46.779  INFO  manager.ListenerWD - ********************
+12:45:46.790  INFO  manager.ListenerWD - Screen with error is--->src/test/screenshots/screen-759.png
+12:45:47.877  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .dialog-container
+12:45:52.893  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .dialog-container
+12:45:52.893  INFO  manager.ListenerWD - List of elements is ---> 0
