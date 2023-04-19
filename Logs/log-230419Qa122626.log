@@ -1,5 +1,0 @@
-12:26:31.240  INFO  manager.ApplicationManager - All tests run in Chrome Browser
-12:26:32.859  INFO  manager.ApplicationManager - The link --->https://ilcarro.web.app/search
-12:26:32.933  INFO  tests.TestBase - Name of method ---> loginSuccess1
-12:26:38.630  INFO  manager.HelperBase - Refresh
-12:26:38.633  INFO  tests.TestBase - Test data from object ---> email: 'ssa@gmail.com' & password: 'Ssa12345$'

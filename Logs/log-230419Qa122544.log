@@ -1,7 +1,0 @@
-12:25:49.340  INFO  manager.ApplicationManager - All tests run in Chrome Browser
-12:25:51.084  INFO  manager.ApplicationManager - The link --->https://ilcarro.web.app/search
-12:25:51.151  INFO  tests.TestBase - Name of method ---> loginSuccessModel
-12:25:56.816  INFO  manager.HelperBase - Refresh
-12:25:56.819  INFO  tests.TestBase - Test data ---> email: 'ssa@gmail.com' & password: 'Ssa12345$'
-12:25:58.783  INFO  tests.TestBase - Assert check is Element present with text 'Logged in success'
-12:25:58.912  INFO  tests.TestBase - The window is closed
