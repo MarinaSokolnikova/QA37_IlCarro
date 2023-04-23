@@ -1,5 +1,6 @@
 package tests;
 
+import manager.DataProviderCar;
 import models.Car;
 import models.User;
 import org.testng.Assert;
@@ -19,23 +20,9 @@ public class AddNewCarTests extends TestBase {
             logger.info("Before class logged in account with data ---> email: 'ssa@gmail.com', password: 'Ssa12345$'");
         }
     }
-    @Test
-    public void addNewCarSuccessAll() {
-        int i = new Random().nextInt(1000) + 1000;
-        Car car = Car.builder()
-                .location("Tel Aviv, Israel")
-                .manufacture("Mazda")
-                .model("M3")
-                .year("2022")
-                .fuel("Petrol")
-                .seats(5)
-                .carClass("C")
-                .carRegNumber("198-72613-" + i)
-                .price(50)
-                .about("Very nice car")
-                .build();
-
-        logger.info("Test data ---> location: 'Tel Aviv, Israel', manufacture: 'Mazda', model: 'M3', year: '2022', fuel: 'Petrol', seats: '5', carClass: 'C', carRegNumber: 198-72613-"+i+", price: '50', about: 'Very nice car'");
+    @Test(dataProvider = "addDataNewCarSuccess", dataProviderClass = DataProviderCar.class)
+    public void addNewCarSuccessAll(Car car) {
+        logger.info("Test data ---> "+car.toString());
         app.getHelperCar().openCarForm();
         app.getHelperCar().fillCarForm(car);
         app.getHelperCar().attachPhoto("C:\\Users\\honor\\QA37\\QA37_IlCarro\\photo.jpg");

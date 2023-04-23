@@ -1,11 +1,13 @@
 package tests;
 
+import manager.DataProviderUser;
 import models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class LoginTests extends TestBase{
@@ -19,10 +21,9 @@ public class LoginTests extends TestBase{
         else app.getHelperUser().refresh();
     }
 
-    @Test
-    public void loginSuccess1(){
-        logger.info("Test data from object ---> email: 'ssa@gmail.com' & password: 'Ssa12345$'");
-        User user = new User().setEmail("ssa@gmail.com").setPassword("Ssa12345$");
+    @Test(dataProvider = "loginDataSuccess", dataProviderClass = DataProviderUser.class)
+    public void loginSuccess1(User user){
+        logger.info("Test data from object --->" + user.toString());
         app.getHelperUser().openLoginForm();
         app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
@@ -54,11 +55,11 @@ public class LoginTests extends TestBase{
         logger.info("Assert check is Element present with text 'Logged in success'");
     }
 
-    @Test
-    public void loginWrongEmail(){
-        logger.info("Test data ---> email: 'ssagmail.com' & password: 'Ssa12345$'");
+    @Test(dataProvider = "loginDataWrongEmail", dataProviderClass = DataProviderUser.class)
+    public void loginWrongEmail(User user){
+        logger.info("Test data --->"+user.toString());
         app.getHelperUser().openLoginForm();
-        app.getHelperUser().fillLoginForm("ssagmail.com", "Ssa12345$");
+        app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
 
         Assert.assertEquals(app.getHelperUser().getErrorText(), "It'snot look like email");
@@ -68,11 +69,11 @@ public class LoginTests extends TestBase{
 
     }
 
-    @Test
-    public void loginWrongEmailEmpty(){
-        logger.info("Test data ---> email: '' & password: 'Ssa12345$'");
+    @Test(dataProvider = "loginDataWrongEmailEmpty", dataProviderClass = DataProviderUser.class)
+    public void loginWrongEmailEmpty(User user){
+        logger.info("Test data --->"+user.toString());
         app.getHelperUser().openLoginForm();
-        app.getHelperUser().fillLoginForm("", "Ssa12345$");
+        app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
 
         Assert.assertEquals(app.getHelperUser().getErrorText(), "Email is required");// in code " Email is required "???

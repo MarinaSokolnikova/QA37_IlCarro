@@ -1,0 +1,69 @@
+12:28:49.304  INFO  manager.ApplicationManager - All tests run in Chrome Browser
+12:28:51.985  INFO  manager.ApplicationManager - The link --->https://ilcarro.web.app/search
+12:28:52.070  INFO  tests.TestBase - Name of method ---> loginSuccess1
+12:28:52.075  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //a[text()=' Logout ']
+12:28:57.118  INFO  manager.ListenerWD - After Find Element---> By.xpath: //a[text()=' Logout ']
+12:28:57.124  INFO  manager.ListenerWD - List of elements is ---> 0
+12:28:57.794  INFO  manager.HelperBase - Refresh
+12:28:57.831  INFO  tests.TestBase - Test data from object --->User{firstName='null', lastName='null', email='ssa@gmail.com', password='Ssa12345$'}
+12:28:57.833  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //*[text()=' Log in ']
+12:28:57.907  INFO  manager.ListenerWD - After Find Element---> By.xpath: //*[text()=' Log in ']
+12:28:57.938  INFO  manager.ListenerWD - Location of element ---> (1287, 24)
+12:28:58.114  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: #email
+12:28:58.168  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: #email
+12:28:58.188  INFO  manager.ListenerWD - Location of element ---> (1070, 258)
+12:28:58.504  INFO  manager.ListenerWD - Before Find Element---> By.id: password
+12:28:58.564  INFO  manager.ListenerWD - After Find Element---> By.id: password
+12:28:58.589  INFO  manager.ListenerWD - Location of element ---> (1070, 332)
+12:28:58.824  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //button[@type='submit']
+12:28:58.882  INFO  manager.ListenerWD - After Find Element---> By.xpath: //button[@type='submit']
+12:28:58.902  INFO  manager.ListenerWD - Location of element ---> (1070, 401)
+12:28:59.000  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .dialog-container
+12:29:00.003  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .dialog-container
+12:29:00.029  INFO  manager.ListenerWD - Location of element ---> (600, 306)
+12:29:00.097  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .dialog-container>h2
+12:29:00.151  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .dialog-container>h2
+12:29:00.186  INFO  manager.ListenerWD - Location of element ---> (583, 344)
+12:29:00.223  INFO  tests.TestBase - Assert check is Element present with text 'Logged in success'
+12:29:00.228  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .dialog-container
+12:29:00.275  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .dialog-container
+12:29:00.277  INFO  manager.ListenerWD - List of elements is ---> 1
+12:29:00.282  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //button[text()='Ok']
+12:29:00.353  INFO  manager.ListenerWD - After Find Element---> By.xpath: //button[text()='Ok']
+12:29:00.377  INFO  manager.ListenerWD - Location of element ---> (793, 398)
+12:29:00.466  INFO  tests.TestBase - The window is closed
+12:29:00.469  INFO  tests.TestBase - Name of method ---> loginSuccess1
+12:29:00.471  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //a[text()=' Logout ']
+12:29:00.509  INFO  manager.ListenerWD - After Find Element---> By.xpath: //a[text()=' Logout ']
+12:29:00.510  INFO  manager.ListenerWD - List of elements is ---> 1
+12:29:00.510  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //a[text()=' Logout ']
+12:29:00.556  INFO  manager.ListenerWD - After Find Element---> By.xpath: //a[text()=' Logout ']
+12:29:00.633  INFO  manager.ListenerWD - Location of element ---> (1099, 24)
+12:29:00.760  INFO  tests.TestBase - Before method finish logout
+12:29:00.762  INFO  tests.TestBase - Test data from object --->User{firstName='null', lastName='null', email='saa@gmail.com', password='Saa12345$'}
+12:29:00.762  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //*[text()=' Log in ']
+12:29:00.802  INFO  manager.ListenerWD - After Find Element---> By.xpath: //*[text()=' Log in ']
+12:29:00.826  INFO  manager.ListenerWD - Location of element ---> (1287, 24)
+12:29:00.931  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: #email
+12:29:00.964  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: #email
+12:29:00.983  INFO  manager.ListenerWD - Location of element ---> (1070, 258)
+12:29:01.214  INFO  manager.ListenerWD - Before Find Element---> By.id: password
+12:29:01.248  INFO  manager.ListenerWD - After Find Element---> By.id: password
+12:29:01.267  INFO  manager.ListenerWD - Location of element ---> (1070, 332)
+12:29:01.479  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //button[@type='submit']
+12:29:01.511  INFO  manager.ListenerWD - After Find Element---> By.xpath: //button[@type='submit']
+12:29:01.531  INFO  manager.ListenerWD - Location of element ---> (1070, 401)
+12:29:01.618  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .dialog-container
+12:29:01.917  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .dialog-container
+12:29:01.937  INFO  manager.ListenerWD - Location of element ---> (608, 308)
+12:29:01.976  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .dialog-container>h2
+12:29:02.002  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .dialog-container>h2
+12:29:02.019  INFO  manager.ListenerWD - Location of element ---> (585, 345)
+12:29:02.047  INFO  tests.TestBase - Assert check is Element present with text 'Logged in success'
+12:29:02.048  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .dialog-container
+12:29:02.077  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .dialog-container
+12:29:02.078  INFO  manager.ListenerWD - List of elements is ---> 1
+12:29:02.078  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //button[text()='Ok']
+12:29:02.111  INFO  manager.ListenerWD - After Find Element---> By.xpath: //button[text()='Ok']
+12:29:02.129  INFO  manager.ListenerWD - Location of element ---> (793, 398)
+12:29:02.190  INFO  tests.TestBase - The window is closed
