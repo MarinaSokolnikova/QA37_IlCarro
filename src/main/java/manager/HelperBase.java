@@ -70,6 +70,18 @@ public class HelperBase {
         //pause(2000);
         return wd.findElement(By.cssSelector(".dialog-container>h2")).getText();
     }
+
+    public void clearTextBox(By locator){
+        WebElement element = wd.findElement(locator);
+        String os = System.getProperty("os.name");
+        System.out.println(os);
+        if(os.startsWith("Win")){
+            element.sendKeys(Keys.CONTROL, "a");
+        }else {
+            element.sendKeys(Keys.COMMAND, "a");
+        }
+        element.sendKeys(Keys.DELETE);
+    }
 }
 
 
