@@ -1,0 +1,13 @@
+21:08:20.262  INFO  manager.ApplicationManager - All tests run in Chrome Browser
+21:08:23.301  INFO  manager.ApplicationManager - The link --->https://ilcarro.web.app/search
+21:09:01.727  WARN  io.netty.util.HashedWheelTimer - An exception was thrown by TimerTask.
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.concurrent.ConcurrentHashMap$ValuesView.iterator(ConcurrentHashMap.java:4730)
+	at org.asynchttpclient.netty.channel.DefaultChannelPool$IdleChannelDetector.run(DefaultChannelPool.java:356)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)

@@ -1,0 +1,30 @@
+21:24:19.305  INFO  manager.ApplicationManager - All tests run in Chrome Browser
+21:24:21.609  INFO  manager.ApplicationManager - The link --->https://ilcarro.web.app/search
+21:24:21.675  INFO  tests.TestBase - Name of method ---> negativeSearch
+21:24:21.679  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: a.logo
+21:24:21.742  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: a.logo
+21:24:21.768  INFO  manager.ListenerWD - Location of element ---> (153, 16)
+21:24:22.343  INFO  manager.ListenerWD - Before Find Element---> By.id: dates
+21:24:22.392  INFO  manager.ListenerWD - After Find Element---> By.id: dates
+21:24:22.409  INFO  manager.ListenerWD - Location of element ---> (153, 308)
+21:24:22.540  INFO  manager.ListenerWD - Before Find Element---> By.id: dates
+21:24:22.577  INFO  manager.ListenerWD - After Find Element---> By.id: dates
+21:24:22.591  INFO  manager.ListenerWD - Location of element ---> (153, 308)
+21:24:22.705  INFO  manager.ListenerWD - Before Find Element---> By.id: city
+21:24:22.747  INFO  manager.ListenerWD - After Find Element---> By.id: city
+21:24:22.765  INFO  manager.ListenerWD - Location of element ---> (153, 234)
+21:24:23.038  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .pac-item
+21:24:23.396  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .pac-item
+21:24:23.412  INFO  manager.ListenerWD - Location of element ---> (154, 279)
+21:24:23.479  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //button[@type='submit']
+21:24:23.521  INFO  manager.ListenerWD - After Find Element---> By.xpath: //button[@type='submit']
+21:24:23.537  INFO  manager.ListenerWD - Location of element ---> (153, 404)
+21:24:23.589  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //button[@disabled]
+21:24:23.642  INFO  manager.ListenerWD - After Find Element---> By.xpath: //button[@disabled]
+21:24:23.651  INFO  manager.ListenerWD - List of elements is ---> 1
+21:24:23.651  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: button[type = 'submit']
+21:24:23.692  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: button[type = 'submit']
+21:24:23.707  INFO  manager.ListenerWD - Location of element ---> (153, 404)
+21:24:23.729  INFO  manager.ListenerWD - Before Find Element---> By.className: error
+21:24:23.792  INFO  manager.ListenerWD - After Find Element---> By.className: error
+21:24:23.793  INFO  manager.ListenerWD - List of elements is ---> 2

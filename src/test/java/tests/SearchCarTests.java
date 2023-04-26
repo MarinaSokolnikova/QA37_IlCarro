@@ -32,7 +32,10 @@ public class SearchCarTests extends TestBase{
 
     @Test
     public void negativeSearch(){
-        app.getHelperCar().searchNotValidPeriod("Tel Aviv, Israel", "1/10/2023", "10/10/2023");
+        app.getHelperCar().searchNotValidPeriod("Tel Aviv, Israel", "1/10/2025", "10/10/2025");
+
+        Assert.assertTrue(app.getHelperCar().notClickable());
+        Assert.assertTrue(app.getHelperCar().errorPresent());
     }
 
     @BeforeMethod

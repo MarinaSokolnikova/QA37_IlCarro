@@ -32,6 +32,17 @@ public class LoginTests extends TestBase{
         logger.info("Assert check is Element present with text 'Logged in success'");
     }
 
+    @Test(dataProvider = "loginDataFile", dataProviderClass = DataProviderUser.class)
+    public void loginSuccess1DataFromFile(User user){
+        logger.info("Test data from object --->" + user.toString());
+        app.getHelperUser().openLoginForm();
+        app.getHelperUser().fillLoginForm(user);
+        app.getHelperUser().submit();
+
+        Assert.assertEquals(app.getHelperUser().getMessage(), "Logged in success");
+        logger.info("Assert check is Element present with text 'Logged in success'");
+    }
+
     @Test
     public void loginSuccess(){
         logger.info("Start test name 'loginSuccess'");
