@@ -1,0 +1,44 @@
+14:14:49.643  INFO  manager.ApplicationManager - All tests run in Chrome Browser
+14:14:52.826  INFO  manager.ApplicationManager - The link --->https://ilcarro.web.app/search
+14:14:52.918  INFO  tests.TestBase - Name of method ---> negativeSearch
+14:14:52.934  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: a.logo
+14:14:53.024  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: a.logo
+14:14:53.062  INFO  manager.ListenerWD - Location of element ---> (153, 16)
+14:14:53.558  INFO  manager.ListenerWD - Before Find Element---> By.id: city
+14:14:53.608  INFO  manager.ListenerWD - After Find Element---> By.id: city
+14:14:53.629  INFO  manager.ListenerWD - Location of element ---> (153, 234)
+14:14:53.998  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .pac-item
+14:14:54.724  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .pac-item
+14:14:54.750  INFO  manager.ListenerWD - Location of element ---> (154, 279)
+14:14:54.828  INFO  manager.ListenerWD - Before Find Element---> By.id: dates
+14:14:54.875  INFO  manager.ListenerWD - After Find Element---> By.id: dates
+14:14:54.895  INFO  manager.ListenerWD - Location of element ---> (153, 327)
+14:14:55.027  INFO  manager.ListenerWD - Before Find Element---> By.id: dates
+14:14:55.068  INFO  manager.ListenerWD - After Find Element---> By.id: dates
+14:14:55.085  INFO  manager.ListenerWD - Location of element ---> (153, 308)
+14:14:55.195  INFO  manager.ListenerWD - Before Find Element---> By.id: city
+14:14:55.236  INFO  manager.ListenerWD - After Find Element---> By.id: city
+14:14:55.252  INFO  manager.ListenerWD - Location of element ---> (153, 234)
+14:14:55.345  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //button[@type='submit']
+14:14:55.416  INFO  manager.ListenerWD - After Find Element---> By.xpath: //button[@type='submit']
+14:14:55.436  INFO  manager.ListenerWD - Location of element ---> (153, 385)
+14:14:55.494  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: div.ng-star-inserted
+14:15:00.552  INFO  manager.ListenerWD - Huston we have a problem
+14:15:00.553  INFO  manager.ListenerWD - Object target ---> ChromeDriver: chrome on WINDOWS (7dc7e2a5d4159806dcefc489e179bd9d)
+14:15:00.554  INFO  manager.ListenerWD - ********************
+14:15:00.555  INFO  manager.ListenerWD - Method name--->findElement
+14:15:00.556  INFO  manager.ListenerWD - ********************
+14:15:00.556  INFO  manager.ListenerWD - ********************
+14:15:00.557  INFO  manager.ListenerWD - ********************
+14:15:00.557  INFO  manager.ListenerWD - ********************
+14:15:00.562  INFO  manager.ListenerWD - InvocationTargetException3org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.ng-star-inserted"}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7dc7e2a5d4159806dcefc489e179bd9d, findElement {using=css selector, value=div.ng-star-inserted}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\honor\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53068/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7dc7e2a5d4159806dcefc489e179bd9d
+14:15:00.564  INFO  manager.ListenerWD - ********************
+14:15:00.579  INFO  manager.ListenerWD - Screen with error is--->src/test/screenshots/screen-580.png

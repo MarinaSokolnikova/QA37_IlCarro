@@ -31,11 +31,14 @@ public class HelperBase {
         WebElement element = wd.findElement(locator);
         element.click();
         element.clear();
+        clearNew(element);
         if (text != null)
         {
             element.sendKeys(text);
         }
     }
+
+
 
     public void pause(int time){
         try {

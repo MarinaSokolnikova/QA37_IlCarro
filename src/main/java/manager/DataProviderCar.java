@@ -26,7 +26,7 @@ public class DataProviderCar {
                 .fuel("Petrol")
                 .seats(5)
                 .carClass("C")
-                .carRegNumber("198-72613-003")
+                .carRegNumber("198-72613-015")
                 .price(50)
                 .about("Very nice car")
                 .build()});
@@ -38,7 +38,7 @@ public class DataProviderCar {
                 .fuel("Petrol")
                 .seats(5)
                 .carClass("C")
-                .carRegNumber("198-72613-004")
+                .carRegNumber("198-72613-016")
                 .price(50)
                 .build()});
         return list.iterator();

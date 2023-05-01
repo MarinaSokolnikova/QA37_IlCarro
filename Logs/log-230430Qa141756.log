@@ -1,0 +1,46 @@
+14:18:00.998  INFO  manager.ApplicationManager - All tests run in Chrome Browser
+14:18:03.768  INFO  manager.ApplicationManager - The link --->https://ilcarro.web.app/search
+14:18:03.845  INFO  tests.TestBase - Name of method ---> searchCurrentMonthSuccess
+14:18:03.850  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: a.logo
+14:18:03.924  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: a.logo
+14:18:03.956  INFO  manager.ListenerWD - Location of element ---> (153, 16)
+14:18:04.417  INFO  manager.ListenerWD - Before Find Element---> By.id: city
+14:18:04.476  INFO  manager.ListenerWD - After Find Element---> By.id: city
+14:18:04.497  INFO  manager.ListenerWD - Location of element ---> (153, 234)
+14:18:04.821  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .pac-item
+14:18:05.143  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .pac-item
+14:18:05.164  INFO  manager.ListenerWD - Location of element ---> (154, 279)
+14:18:05.238  INFO  manager.ListenerWD - Before Find Element---> By.id: dates
+14:18:05.290  INFO  manager.ListenerWD - After Find Element---> By.id: dates
+14:18:05.310  INFO  manager.ListenerWD - Location of element ---> (153, 327)
+14:18:05.447  INFO  manager.ListenerWD - Before Find Element---> By.id: dates
+14:18:05.483  INFO  manager.ListenerWD - After Find Element---> By.id: dates
+14:18:05.498  INFO  manager.ListenerWD - Location of element ---> (153, 308)
+14:18:05.699  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //div[text()=' 1 ']
+14:18:05.776  INFO  manager.ListenerWD - After Find Element---> By.xpath: //div[text()=' 1 ']
+14:18:05.813  INFO  manager.ListenerWD - Location of element ---> (403, 452)
+14:18:05.914  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //div[text()=' 5 ']
+14:18:05.974  INFO  manager.ListenerWD - After Find Element---> By.xpath: //div[text()=' 5 ']
+14:18:05.995  INFO  manager.ListenerWD - Location of element ---> (283, 492)
+14:18:06.086  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //button[@type='submit']
+14:18:06.140  INFO  manager.ListenerWD - After Find Element---> By.xpath: //button[@type='submit']
+14:18:06.160  INFO  manager.ListenerWD - Location of element ---> (153, 385)
+14:18:07.260  INFO  manager.ListenerWD - Huston we have a problem
+14:18:07.261  INFO  manager.ListenerWD - Object target ---> [[ChromeDriver: chrome on WINDOWS (a71eb59834a20f38a35ee6c5e91b69f8)] -> xpath: //button[@type='submit']]
+14:18:07.262  INFO  manager.ListenerWD - ********************
+14:18:07.263  INFO  manager.ListenerWD - Method name--->click
+14:18:07.264  INFO  manager.ListenerWD - ********************
+14:18:07.265  INFO  manager.ListenerWD - ********************
+14:18:07.265  INFO  manager.ListenerWD - ********************
+14:18:07.266  INFO  manager.ListenerWD - ********************
+14:18:07.276  INFO  manager.ListenerWD - InvocationTargetException3org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-htr-c106="" type="submit" disabled="">...</button> is not clickable at point (220, 400). Other element would receive the click: <button mat-button="" type="button" cdkarialive="polite" class="mat-focus-indicator mat-calendar-period-button mat-button mat-button-base" ng-reflect-politeness="polite" aria-label="Choose month and year">...</button>
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a71eb59834a20f38a35ee6c5e91b69f8, clickElement {id=103a71d0-8344-4380-87e8-938db288716c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\honor\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53369}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53369/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a71eb59834a20f38a35ee6c5e91b69f8)] -> xpath: //button[@type='submit']]
+Session ID: a71eb59834a20f38a35ee6c5e91b69f8
+14:18:07.280  INFO  manager.ListenerWD - ********************
+14:18:07.295  INFO  manager.ListenerWD - Screen with error is--->src/test/screenshots/screen-441.png

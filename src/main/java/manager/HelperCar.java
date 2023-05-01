@@ -157,4 +157,9 @@ public class HelperCar extends HelperBase{
         click(By.id("city"));
         submit();
     }
+
+    public boolean isErrorDisplayed(String message) {
+        String text = wd.findElement(By.cssSelector(".error")).getText();
+        return  text.equals(message);
+    }
 }

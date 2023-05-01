@@ -104,6 +104,5 @@ public class RegistrationTests extends TestBase{
     public void postCondition(){
         if (app.getHelperUser().isPopup()) {
             app.getHelperUser().closeWindow();}
-        app.getHelperUser().back();
     }
 }

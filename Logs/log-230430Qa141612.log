@@ -1,0 +1,27 @@
+14:16:17.482  INFO  manager.ApplicationManager - All tests run in Chrome Browser
+14:16:20.222  INFO  manager.ApplicationManager - The link --->https://ilcarro.web.app/search
+14:16:20.303  INFO  tests.TestBase - Name of method ---> negativeSearch
+14:16:20.309  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: a.logo
+14:16:20.387  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: a.logo
+14:16:20.417  INFO  manager.ListenerWD - Location of element ---> (153, 16)
+14:16:21.038  INFO  manager.ListenerWD - Before Find Element---> By.id: city
+14:16:21.097  INFO  manager.ListenerWD - After Find Element---> By.id: city
+14:16:21.120  INFO  manager.ListenerWD - Location of element ---> (153, 234)
+14:16:21.452  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .pac-item
+14:16:22.103  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .pac-item
+14:16:22.122  INFO  manager.ListenerWD - Location of element ---> (154, 279)
+14:16:22.197  INFO  manager.ListenerWD - Before Find Element---> By.id: dates
+14:16:22.243  INFO  manager.ListenerWD - After Find Element---> By.id: dates
+14:16:22.260  INFO  manager.ListenerWD - Location of element ---> (153, 327)
+14:16:22.386  INFO  manager.ListenerWD - Before Find Element---> By.id: dates
+14:16:22.420  INFO  manager.ListenerWD - After Find Element---> By.id: dates
+14:16:22.436  INFO  manager.ListenerWD - Location of element ---> (153, 308)
+14:16:22.539  INFO  manager.ListenerWD - Before Find Element---> By.id: city
+14:16:22.578  INFO  manager.ListenerWD - After Find Element---> By.id: city
+14:16:22.596  INFO  manager.ListenerWD - Location of element ---> (153, 234)
+14:16:22.704  INFO  manager.ListenerWD - Before Find Element---> By.xpath: //button[@type='submit']
+14:16:22.751  INFO  manager.ListenerWD - After Find Element---> By.xpath: //button[@type='submit']
+14:16:22.771  INFO  manager.ListenerWD - Location of element ---> (153, 385)
+14:16:22.823  INFO  manager.ListenerWD - Before Find Element---> By.cssSelector: .error
+14:16:22.861  INFO  manager.ListenerWD - After Find Element---> By.cssSelector: .error
+14:16:22.881  INFO  manager.ListenerWD - Location of element ---> (153, 352)
